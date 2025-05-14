@@ -1,11 +1,14 @@
 Project Overview
-This repository contains the complete workflow for predicting diabetes using supervised machine-learning techniques. The analysis starts with rigorous data cleaning and preprocessing, then trains and evaluates three classifiers—Random Forest, Decision Tree, and Support Vector Machine—on a 70 / 30 train–test split. Key performance indicators are accuracy, precision, recall, F1 score, and specificity. A second round of training fine-tunes the tree-based models with a grid search over their most influential hyper-parameters.
+
+- This repository contains the complete workflow for predicting diabetes using supervised machine-learning techniques. The analysis starts with rigorous data cleaning and preprocessing, then trains and evaluates three classifiers—Random Forest, Decision Tree, and Support Vector Machine—on a 70 / 30 train–test split. Key performance indicators are accuracy, precision, recall, F1 score, and specificity. A second round of training fine-tunes the tree-based models with a grid search over their most influential hyper-parameters.
 
 Data
-The dataset (sourced from Kaggle) was purged of missing or implausible values—such as extreme ages or body-mass indices—and split into categorical and numerical subsets. Categorical features were converted with one-hot encoding; numerical features were normalised with Min–Max scaling.
+
+- The dataset (sourced from Kaggle) was purged of missing or implausible values—such as extreme ages or body-mass indices—and split into categorical and numerical subsets. Categorical features were converted with one-hot encoding; numerical features were normalised with Min–Max scaling.
 
 Modelling Pipeline
-Each model is fitted on the same preprocessed feature matrix to ensure a fair comparison. Predictions on the held-out test set are scored with the scikit-learn classification report and a custom specificity function. Core metrics before hyper-parameter tuning are:
+
+- Each model is fitted on the same preprocessed feature matrix to ensure a fair comparison. Predictions on the held-out test set are scored with the scikit-learn classification report and a custom specificity function. Core metrics before hyper-parameter tuning are:
 
 Model	Accuracy	Precision	Recall	F1	Specificity
 Random Forest	0.969	0.939	0.681	0.789	0.996
