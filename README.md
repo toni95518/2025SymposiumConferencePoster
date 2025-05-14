@@ -10,10 +10,8 @@ Modelling Pipeline
 
 - Each model is fitted on the same preprocessed feature matrix to ensure a fair comparison. Predictions on the held-out test set are scored with the scikit-learn classification report and a custom specificity function. Core metrics before hyper-parameter tuning are:
 
-Model	Accuracy	Precision	Recall	F1	Specificity
-Random Forest	0.969	0.939	0.681	0.789	0.996
-Decision Tree	0.949	0.681	0.738	0.708	0.968
-SVM	0.962	0.967	0.563	0.712	0.998
+![image](https://github.com/user-attachments/assets/02b0ae83-9114-4d3f-bc94-a83657d98f44)
+
 
 Random Forest offers the most balanced performance, combining high overall accuracy, the best F1 score, and near-perfect specificity.
 
